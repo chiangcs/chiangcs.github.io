@@ -1,0 +1,60 @@
+/* Adapted from Jon Barron's website: https://github.com/jonbarron/jonbarron_website */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+a { color: #1772d0; text-decoration: none; }
+a:focus, a:hover { color: #f09228; text-decoration: none; }
+
+body, td, th, tr, p, a, strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body { margin: 0; background: #fff; color: #000; }
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.papertitle { font-weight: 700; }
+
+.layout { width: 100%; border: 0; border-spacing: 0; border-collapse: separate; margin-right: auto; margin-left: auto; }
+.page { max-width: 800px; }
+
+.portrait {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+.teaser { width: 100%; height: auto; display: block; }
+
+span.highlight { background-color: #ffffd0; }
+sup { font-size: 0.7em; line-height: 0; }
+
+.colored-box {
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.note { color: #555; font-size: 12px; }
+
+@media (max-width: 600px) {
+  .stack td { display: block; width: auto !important; }
+  .stack td.empty { display: none; }
+  .stack .portrait-cell { max-width: 200px; margin: 0 auto; }
+  .stack .colored-box { padding: 10px 16px; }
+}
