@@ -19,7 +19,7 @@
         <div class="profile-text">
           <h1>Chien-Sheng Chiang</h1>
           <div class="biography">
-            <p>I am a Research Assistant at National Taiwan University, advised by <a href="https://twke18.github.io/">Tsung-Wei Ke</a>. I work toward <strong>scalable robot learning</strong>: robots that acquire broad skills without a proportional increase in costly real-world data. I see two bottlenecks on this path. <strong>Effective feature learning</strong> asks which representations expose the structure a policy needs; my work so far studies this through the transport structure of flow-matching models and task inference in behavioral foundation models. <strong>Efficient exploration</strong> asks how an agent should gather the experience those representations are learned from, and it is the direction I want to pursue next. I am applying to PhD programs for Fall 2027.</p>
+            <p>I am a Research Assistant at the <a href="https://embodiedai-ntu.github.io/">Embodied AI Lab</a> at National Taiwan University, advised by <a href="https://twke18.github.io/">Tsung-Wei Ke</a>. I work toward <strong>scalable robot learning</strong>: robots that acquire broad skills without a proportional increase in costly real-world data. I see two bottlenecks on this path. <strong>Effective feature learning</strong> asks which representations expose the structure a policy needs; my work so far studies this through the transport structure of flow-matching models and task inference in behavioral foundation models. <strong>Efficient exploration</strong> asks how an agent should gather the experience those representations are learned from, and it is the direction I want to pursue next. I am applying to PhD programs for Fall 2027.</p>
           </div>
           <nav class="profile-links" aria-label="Contact and profiles">
             <a href="mailto:b10902063@ntu.edu.tw">Email</a>
@@ -37,27 +37,41 @@
       <section id="publications" aria-labelledby="publications-heading">
         <h2 id="publications-heading">Publications</h2>
         <div class="publications record-list">
-          <article class="publication">
+          <article class="publication publication-with-teaser">
+            <button type="button" class="publication-teaser video-teaser" data-video="assets/videos/cnp_teaser.mp4" aria-label="Play video: Learning Conditional Source Distribution via Flow Reversal for Temporal Flow Matching">
+              <img src="assets/images/publications/cnpflow.png" width="2000" height="1138" alt="" loading="lazy" decoding="async">
+              <span class="play-badge" aria-hidden="true"></span>
+            </button>
             <div class="record-body publication-details">
-              <h3>CNP-Flow: Unified Temporal Flow Matching via Conditional Noise Prediction</h3>
+              <h3>Learning Conditional Source Distribution via Flow Reversal for Temporal Flow Matching</h3>
               <p class="authors">Kuan-Hsun Tu<sup>*</sup>, Hsuan-Chi Liu<sup>†*</sup>, Jia-Wei Liao<sup>*</sup>, <strong>Chien-Sheng Chiang</strong>, Cheng-Fu Chou, Tsung-Wei Ke</p>
               <p class="venue">In submission, 2026.</p>
+              <ul class="resource-links" aria-label="CNP-Flow resources">
+                <li><a href="https://arxiv.org/abs/2610.05349">Paper</a></li>
+                <li><a href="https://embodiedai-ntu.github.io/cnpflow/index.html">Project Website</a></li>
+              </ul>
             </div>
           </article>
           <article class="publication publication-with-teaser">
-            <div class="publication-teaser">
-              <img src="assets/images/publications/bls.png" width="2160" height="885" alt="BLS reconstructs a flat low reward and a sharp high reward, so the zero-shot policy concentrates on high-reward states where OLS does not" loading="lazy" decoding="async">
-            </div>
+            <button type="button" class="publication-teaser video-teaser" data-video="assets/videos/bls_teaser.mp4" aria-label="Play video: Task Inference Beyond Least Squares in Behavioral Foundation Model">
+              <img src="assets/images/publications/bls.png" width="2160" height="885" alt="" loading="lazy" decoding="async">
+              <span class="play-badge" aria-hidden="true"></span>
+            </button>
             <div class="record-body publication-details">
               <h3>Task Inference Beyond Least Squares in Behavioral Foundation Model</h3>
               <p class="authors">Kuan-Hsun Tu<sup>*</sup>, <strong>Chien-Sheng Chiang</strong><sup>†*</sup>, Hsin-Wei Chen, Tsung-Wei Ke</p>
               <p class="venue">NeurIPS 2026 PTA Workshop</p>
+              <ul class="resource-links" aria-label="BLS resources">
+                <li><a href="https://arxiv.org/abs/2610.05350">Paper</a></li>
+                <li><a href="https://embodiedai-ntu.github.io/BLS/index.html">Project Website</a></li>
+              </ul>
             </div>
           </article>
           <article class="publication publication-with-teaser">
-            <a class="publication-teaser" href="https://embodiedai-ntu.github.io/cotfm/index.html" aria-label="COT-FM project website">
-              <img src="assets/images/publications/cotfm.png" width="1836" height="918" alt="COT-FM comparison of transport paths on 5-Gaussians and Two Moons distributions" loading="lazy" decoding="async">
-            </a>
+            <button type="button" class="publication-teaser video-teaser" data-video="assets/videos/cot_teaser.mp4" aria-label="Play video: COT-FM: Cluster-wise Optimal Transport Flow Matching">
+              <img src="assets/images/publications/cotfm.png" width="1836" height="918" alt="" loading="lazy" decoding="async">
+              <span class="play-badge" aria-hidden="true"></span>
+            </button>
             <div class="record-body publication-details">
               <h3>COT-FM: Cluster-wise Optimal Transport Flow Matching</h3>
               <p class="authors"><strong>Chien-Sheng Chiang</strong><sup>*</sup>, Kuan-Hsun Tu<sup>†*</sup>, Jia-Wei Liao<sup>*</sup>, Cheng-Fu Chou, Tsung-Wei Ke</p>
@@ -70,9 +84,10 @@
             </div>
           </article>
                   <article class="publication publication-with-teaser">
-            <div class="publication-teaser">
-              <img src="assets/images/publications/vec.png" width="980" height="503" alt="Optimizing Dependent Task Offloading with Hop Constraints in Vehicular Edge Computing" loading="lazy" decoding="async">
-            </div>
+            <button type="button" class="publication-teaser video-teaser" data-video="assets/videos/optimize.mp4" aria-label="Play video: Optimizing Dependent Task Offloading with Hop Constraints in Vehicular Edge Computing">
+              <img src="assets/images/publications/vec.png" width="980" height="503" alt="" loading="lazy" decoding="async">
+              <span class="play-badge" aria-hidden="true"></span>
+            </button>
             <div class="record-body publication-details">
               <h3>Optimizing Dependent Task Offloading with Hop Constraints in Vehicular Edge Computing</h3>
               <p class="authors"><strong>Chien-Sheng Chiang</strong>, SangEun Park, Hao-Tse Hsiao, BaekGyu Kim, Chung-Wei Lin</p>
@@ -94,7 +109,7 @@
           <article class="experience record">
             <p class="record-date">Jan 2025–Present</p>
             <div class="record-body experience-description">
-              <h3>Embodied Artificial Intelligence Laboratory, NTU</h3>
+              <h3><a href="https://embodiedai-ntu.github.io/">Embodied Artificial Intelligence Laboratory</a>, NTU</h3>
               <p>Research Assistant · Advisor: Professor Tsung-Wei Ke</p>
             </div>
           </article>
@@ -123,5 +138,31 @@
       </section>
       <footer>© 2026 Chien-Sheng Chiang <span class="template-credit">· Template by <a href="https://github.com/syun413/syun413.github.io">Kuan-Hsun Tu</a></span></footer>
     </main>
+    <dialog id="video-dialog" class="video-dialog" aria-label="Video">
+      <button type="button" class="video-close" aria-label="Close video">&times;</button>
+      <video controls playsinline preload="none"></video>
+    </dialog>
+    <script>
+      (function () {
+        var dialog = document.getElementById('video-dialog');
+        if (!dialog || typeof dialog.showModal !== 'function') return;
+        var video = dialog.querySelector('video');
+        document.querySelectorAll('.video-teaser').forEach(function (teaser) {
+          teaser.addEventListener('click', function () {
+            video.src = teaser.dataset.video;
+            dialog.showModal();
+            var playing = video.play();
+            if (playing && playing.catch) playing.catch(function () {});
+          });
+        });
+        dialog.querySelector('.video-close').addEventListener('click', function () { dialog.close(); });
+        dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+        dialog.addEventListener('close', function () {
+          video.pause();
+          video.removeAttribute('src');
+          video.load();
+        });
+      })();
+    </script>
   </body>
 </html>

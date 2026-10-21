@@ -66,6 +66,15 @@ h3 { margin: 0; }
 .publication-teaser { display: block; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
 .publication-teaser:hover { border-color: var(--link); }
 .publication-teaser img { display: block; width: 100%; height: auto; }
+.video-teaser { position: relative; width: 100%; padding: 0; background: none; font: inherit; cursor: pointer; }
+.play-badge { position: absolute; top: 50%; left: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: rgba(0, 0, 0, 0.55); transition: background 0.15s; }
+.play-badge::after { content: ""; position: absolute; top: 12px; left: 15px; border-style: solid; border-width: 8px 0 8px 13px; border-color: transparent transparent transparent #fff; }
+.video-teaser:hover .play-badge, .video-teaser:focus-visible .play-badge { background: var(--link); }
+.video-dialog { width: min(960px, 92vw); padding: 0; border: 0; border-radius: 6px; background: #000; overflow: visible; }
+.video-dialog::backdrop { background: rgba(0, 0, 0, 0.75); }
+.video-dialog video { display: block; width: 100%; aspect-ratio: 16 / 9; max-height: 85vh; object-fit: contain; background: #000; border-radius: 6px; }
+.video-close { position: absolute; top: -40px; right: 0; width: 36px; height: 36px; padding: 0; border: 0; background: none; color: #fff; font-size: 30px; line-height: 1; cursor: pointer; }
+.video-close:hover { color: #d7dcf0; }
 .publication h3 { font-size: 18px; font-weight: 400; line-height: 1.4; }
 .authors strong { color: var(--ink); }
 .publication .venue { color: var(--ink); font-size: 14px; font-weight: 700; }
